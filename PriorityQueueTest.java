@@ -32,7 +32,7 @@ public class PriorityQueueTest {
     public static Collection testArrays() {
         Integer[][] Random2Darray = new Integer[5][10];
         return Arrays.asList(new Integer[][] {
-                { 2, 3, 1, 9, "test_error" },
+                { 2, 3, 1, 9, 6 },
                 { 7, 2, 5, 1, 4 },
                 { 6, 3, 7, 2, 8 },
                 { 3, 9, 8, 2, 1 },
