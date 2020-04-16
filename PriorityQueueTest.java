@@ -32,7 +32,7 @@ public class PriorityQueueTest {
     public static Collection testArrays() {
         Integer[][] Random2Darray = new Integer[5][10];
         return Arrays.asList(new Integer[][] {
-                { 2, 3, 1, 9, "ERROR" },
+                { 2, 3, 1, 9, 6 },
                 { 7, 2, 5, 1, 4 },
                 { 6, 3, 7, 2, 8 },
                 { 3, 9, 8, 2, 1 },
@@ -56,7 +56,7 @@ public class PriorityQueueTest {
     public void ExceptionTest1() {
         PriorityQueue<String> prq = new PriorityQueue<String>();
         String s = new String();
-        s = null;
+        s = "ERROR";
         prq.add(s);
     }
     @Test(expected=ClassCastException.class) // add
