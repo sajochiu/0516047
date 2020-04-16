@@ -56,7 +56,7 @@ public class PriorityQueueTest {
     public void ExceptionTest1() {
         PriorityQueue<String> prq = new PriorityQueue<String>();
         String s = new String();
-        s = "ERROR";
+        s = null;
         prq.add(s);
     }
     @Test(expected=ClassCastException.class) // add
